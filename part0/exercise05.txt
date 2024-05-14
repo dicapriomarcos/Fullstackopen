@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant USER as User
+    participant BROWSER as Browser
+    participant SERVER as Server
+
+    USER ->> BROWSER: TYPE URL (https://studies.cs.helsinki.fi/exampleapp/spa)
+    BROWSER ->> SERVER: HTTP Request
+    SERVER ->> BROWSER: HTTP GET document
+    SERVER ->> BROWSER: HTTP GET main.css
+    SERVER ->> BROWSER: HTTP GET main.js
+    BROWSER ->> SERVER: Execute JS code and HTTP GET (https://studies.cs.helsinki.fi/exampleapp/data.json)
+    SERVER -->> BROWSER: Send DATA (JSON Format)
+    BROWSER -->> USER: Process JSON and Add HTML Code

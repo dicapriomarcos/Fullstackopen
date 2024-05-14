@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant User
+    participant Browser
+    participant Server
+    participant Database
+
+    User->Browser: User enter data (new note) in the form and click "Save"
+    activate Browser
+    Browser->User: SPA generate new note into the HTML and show to the User the new Note
+    Browser->Server: Sends form data (HTTP POST) JSON Format
+    activate Server
+    Server-->Browser: HTTP Header 201 (Created)
+    Server->Database: Process and stores data in the database

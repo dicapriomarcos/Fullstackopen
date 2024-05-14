@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant USER
+    participant BROWSER
+    participant FORM
+    participant INPUT
+    participant SUBMIT
+
+    USER ->> BROWSER: TYPE URL (https://studies.cs.helsinki.fi/exampleapp/spa)
+    USER ->> FORM: Scroll to Form
+    USER ->> INPUT: Write in the text input
+    USER ->> SUBMIT: Click in "Save" button
