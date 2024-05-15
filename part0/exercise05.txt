@@ -1,7 +1,7 @@
 sequenceDiagram
-    participant USER as User
-    participant BROWSER as Browser
-    participant SERVER as Server
+    participant USER
+    participant BROWSER
+    participant SERVER
 
     USER ->> BROWSER: TYPE URL (https://studies.cs.helsinki.fi/exampleapp/spa)
     BROWSER ->> SERVER: HTTP Request
