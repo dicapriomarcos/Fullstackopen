@@ -74,9 +74,9 @@ const App = () => {
   return (
     <div>
       <Title text="UniCafe reviews" />
-      <Button handleClick={submitGoodReview} text="Good :D"/>
-      <Button handleClick={submitNeutralReview} text="Neutral :|"/>
-      <Button handleClick={submitBadReview} text="Bad :C"/>
+      <Button handleClick={submitGoodReview} text="Good 🤩"/>
+      <Button handleClick={submitNeutralReview} text="Neutral 😐"/>
+      <Button handleClick={submitBadReview} text="Bad ☹️"/>
       <Statistics good={good} neutral={neutral} bad={bad}/>
     </div>
   );
